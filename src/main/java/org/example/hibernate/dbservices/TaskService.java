@@ -1,18 +1,15 @@
 package org.example.hibernate.dbservices;
 
 import org.example.hibernate.entity.Task;
-import org.postgresql.util.PSQLException;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import java.sql.Date;
-import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +28,7 @@ public class TaskService {
         Root<Task> root = criteriaQuery.from(Task.class);
         criteriaQuery.select(root);
         List<Predicate> predicates = new ArrayList<>();
-        Predicate predicate = criteriaBuilder.between(root.<Date>get("deliverydate"), date1, date2);
+        Predicate predicate = criteriaBuilder.between(root.get("deliverydate"), date1, date2);
         predicates.add(predicate);
         if (ordernumber > -1) {
             predicate = criteriaBuilder.equal(root.get("ordernumber"), ordernumber);
@@ -47,13 +44,16 @@ public class TaskService {
     public boolean addTask(Integer orderNumber){
         EntityManager manager = DBClass.getSessionFactory().createEntityManager();
         int  result = 0;
-        manager.getTransaction().begin();
+        try {
+            manager.getTransaction().begin();
             result = manager.createNativeQuery("INSERT INTO tasks " +
                     "(deliverydate, orderaddtime, ordernumber, status) " +
                     "VALUES (CURRENT_DATE, CURRENT_TIME, ?, false)")
                     .setParameter(1, orderNumber).executeUpdate();
-        manager.getTransaction().commit();
-        manager.close();
+            manager.getTransaction().commit();
+        } finally {
+            manager.close();
+        }
         return result != 0;
     }
 }

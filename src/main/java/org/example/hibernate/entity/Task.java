@@ -7,7 +7,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Time;
-import java.util.List;
 
 @Entity
 @Table(name = "tasks")

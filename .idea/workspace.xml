@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8e2b179-f5d3-4b50-8b4a-5261f72775e4" name="Default Changelist" comment="" />
+    <list default="true" id="c8e2b179-f5d3-4b50-8b4a-5261f72775e4" name="Default Changelist" comment="Version 1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hibernate/dbservices/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/dbservices/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hibernate/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hibernate/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/controllers/Controller.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,6 +92,10 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="234" y="8" key="#Inspections" timestamp="1584453258255">
       <screen x="0" y="0" width="1280" height="690" />
@@ -98,26 +113,30 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="264" y="276" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.690@0.0.1280.690" timestamp="1584171865145" />
+    <state x="310" y="0" key="CommitChangelistDialog2" timestamp="1584536031869">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="310" y="0" key="CommitChangelistDialog2/0.0.1280.690@0.0.1280.690" timestamp="1584536031869" />
     <state width="402" height="466" key="DebuggerActiveHint" timestamp="1584273960726">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state width="402" height="466" key="DebuggerActiveHint/0.0.1280.690@0.0.1280.690" timestamp="1584273960726" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1584455319735">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1584536031881">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1584455319735" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1584455319735">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1584536031881" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1584536031881">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1584455319735" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1584455319735">
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1584536031881" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1584536031881">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1584455319735" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1584455319735">
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1584536031881" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1584536031881">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1584455319735" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1584536031881" />
     <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1584376610877">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
@@ -134,14 +153,14 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1584376610876" />
-    <state x="172" y="5" key="Maven.ArtifactSearchDialog" timestamp="1584250542596">
+    <state x="172" y="5" key="Maven.ArtifactSearchDialog" timestamp="1584535720411">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="172" y="5" key="Maven.ArtifactSearchDialog/0.0.1280.690@0.0.1280.690" timestamp="1584250542596" />
-    <state x="350" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1584446701672">
+    <state x="172" y="5" key="Maven.ArtifactSearchDialog/0.0.1280.690@0.0.1280.690" timestamp="1584535720411" />
+    <state x="350" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1584535383098">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="350" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1584446701672" />
+    <state x="350" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1584535383098" />
     <state x="405" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584164316546">
       <screen x="0" y="0" width="1280" height="690" />
     </state>

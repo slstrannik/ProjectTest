@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -23,7 +24,7 @@ public class Controller {
 
     @PostMapping(value = "task")
     public ResponseEntity<List<Task>> getTasks(@RequestBody Map<String, String> args) {
-        List<Task> tasks = null;
+        List<Task> tasks;
         try {
             Date date1 = Date.valueOf(args.get("date1"));
             Date date2 = Date.valueOf(args.get("date2"));
@@ -44,7 +45,7 @@ public class Controller {
         try {
             int order = Integer.parseInt(args.get("ordernumber"));
             if (service.addTask(order)) status = HttpStatus.CREATED;
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return new ResponseEntity<>(status);
